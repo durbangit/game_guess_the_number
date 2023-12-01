@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style.css">
+   <title>⊗jsPrStGGN Игра угадай число</title>
+</head>
+<body>
+   
+   <div class="wrapper">
+
+      <header class="header">
+         <div class="container">
+            <div class="header__row">
+               <h1 class="header__title title">⊗jsPrStGGN Игра угадай число</h1>
+            </div>
+         </div>
+      </header>
+
+      <div class="content">
+         <div class="container">
+            <div class="content__wrap">
+
+               <div class="game">
+                  <h2 class="game__title title">Игра: Угадай число</h2>
+
+                  <div class="game__body">
+                     <div class="game__rules">
+                        <p>В этой игре компьютер загадывает число от 1 до 100. В ячейку на экране игрок вводит число от 1 до 100, пытаясь угадать, что же загадал компьютер.</p>
+   
+                        <p>Если игрок ввел число, меньше загаданного, компьютер даст игроку подсказку 'введите число побольше', а если введено больше загаданного, то, соответственно, компьютер даст подсказку 'введите число поменьше'.</p>
+   
+                        <p>У игрока имеются 10 попыток.</p>
+   
+                        <p>Если игрок угадает число, которое загодал компьютер, за 10 попыток, то компьютер Вас поздравит. Иначе, компьютер напишет, что Вы проиграли.</p>
+                     </div>
+
+                     <button class="game__start" type="button">Начать игру</button>
+   
+                     <div class="game__wrap">
+                        <div class="game__error">Введите число от 1 до 100</div>
+
+                        <input class="game__input" type="number" value="">
+                        <button class="game__click">Проверить</button>
+
+                        <ul class="game__menu">
+                           <li>Результат: &ensp;<span>Угадайте число</span></li>
+                           <li>Подсказки: &ensp;<span>Нажмите кнопку "Начать игру".</span></li>
+                           <li>Число попыток: &ensp;<span>0</span></li>
+                        </ul>
+                        <p class="game__text">Начните игру</p>
+                     </div>
+
+                     <button class="game__restart" type="button">Начать игру занова</button>
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+      </div>
+         
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__row">
+               <h2 class="footer__title title">⊗jsPrStGGN Игра угадай число</h2>
+            </div>
+         </div>
+      </footer>
+
+   </div>
+
+   <script src="./js/main.js"></script>
+</body>
+</html>
